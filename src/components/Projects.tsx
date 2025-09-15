@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { ExternalLink, Github, Brain, BookOpen, Users, Smartphone } from "lucide-react";
+import { ExternalLink, Github, Brain, BookOpen, Smartphone } from "lucide-react";
 
 const Projects = () => {
   const projects = [
@@ -16,18 +16,6 @@ const Projects = () => {
       liveUrl: "#",
       githubUrl: "#",
       icon: BookOpen,
-      featured: true
-    },
-    {
-      id: 2,
-      title: "Campus Smart Assistant",
-      description: "An intelligent assistant system designed to help students navigate campus life and academic requirements.",
-      longDescription: "AI-powered chatbot that provides instant answers to campus-related queries, event notifications, and academic guidance.",
-      image: "/api/placeholder/600/400",
-      technologies: ["Python", "NLP", "React", "FastAPI"],
-      liveUrl: "#",
-      githubUrl: "#",
-      icon: Users,
       featured: true
     },
     {

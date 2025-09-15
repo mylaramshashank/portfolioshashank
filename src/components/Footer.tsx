@@ -11,18 +11,11 @@ const Footer = () => {
     { icon: Mail, href: "#", label: "Email" },
   ];
 
-  const quickLinks = [
-    { name: "Home", href: "#" },
-    { name: "About", href: "#about" },
-    { name: "Projects", href: "#projects" },
-    { name: "Contact", href: "#contact" },
-  ];
-
   return (
     <footer className="bg-navy-deep text-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Main Footer Content */}
-        <div className="py-12 grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="py-12 grid md:grid-cols-3 gap-8">
           {/* Brand Section */}
           <div className="lg:col-span-2 space-y-4">
             <motion.h3 
@@ -71,38 +64,9 @@ const Footer = () => {
             </motion.div>
           </div>
 
-          {/* Quick Links */}
-          <motion.div 
-            className="space-y-4"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-          >
-            <h4 className="text-lg font-semibold font-heading">Quick Links</h4>
-            <ul className="space-y-2">
-              {quickLinks.map((link, index) => (
-                <motion.li 
-                  key={link.name}
-                  initial={{ opacity: 0, x: -10 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.4, delay: 0.3 + index * 0.05 }}
-                >
-                  <a 
-                    href={link.href}
-                    className="text-gray-300 hover:text-teal-light transition-colors inline-block hover:translate-x-1 transition-transform"
-                  >
-                    {link.name}
-                  </a>
-                </motion.li>
-              ))}
-            </ul>
-          </motion.div>
-
           {/* Contact Info */}
           <motion.div 
-            className="space-y-4"
+            className="md:col-span-2 space-y-4"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -113,6 +77,12 @@ const Footer = () => {
               <p>Hyderabad, India</p>
               <p>mylaram.shashank@example.com</p>
               <p>+91 9876543210</p>
+            </div>
+            
+            <div className="pt-4">
+              <p className="text-gray-300 leading-relaxed">
+                Always excited to discuss new opportunities and collaborate on meaningful projects.
+              </p>
             </div>
           </motion.div>
         </div>

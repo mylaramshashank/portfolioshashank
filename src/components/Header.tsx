@@ -67,9 +67,9 @@ const Header = () => {
               <span className={`transition-colors duration-300 ${
                 isScrolled ? "text-foreground" : "text-white"
               }`}>
-                Mylaram
-              </span>{" "}
-              <span className="text-teal-primary">Shashank</span>
+                M
+              </span>
+              <span className="text-teal-primary">S</span>
             </a>
           </motion.div>
 

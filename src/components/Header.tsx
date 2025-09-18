@@ -20,9 +20,9 @@ const Header = () => {
   ];
 
   const socialLinks = [
-    { icon: Github, href: "#", label: "GitHub" },
-    { icon: Linkedin, href: "#", label: "LinkedIn" },
-    { icon: Mail, href: "#", label: "Email" },
+    { icon: Github, href: "#", label: "https://github.com/mylaramshashank" },
+    { icon: Linkedin, href: "#", label: "https://www.linkedin.com/in/mylaram-shashank-95677b384/" },
+    { icon: Mail, href: "#", label: "mylaramshashank@gmail.com" },
   ];
 
   const scrollToSection = (href: string) => {

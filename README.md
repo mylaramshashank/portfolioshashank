@@ -36,6 +36,8 @@ npm i
 npm run dev
 ```
 
+To verify a production build, run `npm run build`. To check code style with ESLint, run `npm run lint`.
+
 **Edit a file directly in GitHub**
 
 - Navigate to the desired file(s).

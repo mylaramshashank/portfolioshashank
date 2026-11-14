@@ -9,6 +9,7 @@ A personal portfolio website built with React, TypeScript, and Vite. It presents
 - Tailwind CSS and shadcn/ui
 - Framer Motion
 - React Router
+- TanStack Query for query and server-state management
 
 ## Run Locally
 
@@ -21,7 +22,7 @@ npm install
 npm run dev
 ```
 
-Vite prints the local development URL in the terminal.
+The Vite development server is configured for port `8080`. If that port is occupied, Vite may select the next available port and prints the actual URL in the terminal.
 
 ## Available Scripts
 
